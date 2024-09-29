@@ -83,4 +83,13 @@ function startOver(){
   gamePattern =[];
   started=false;
 }
+$(document).keypress(startGame);
+$(document).on('touchstart', startGame);
 
+function startGame() {
+    if (!started) {
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        started = true;
+    }
+}
