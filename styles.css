@@ -58,3 +58,31 @@ body {
   background-color: grey;
   
 }
+
+.instructions-heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+.instructions {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.instructions p {
+  margin: 0;
+}
+
+.instructions br {
+  margin-bottom: 10px;
+}
