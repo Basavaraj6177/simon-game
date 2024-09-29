@@ -118,3 +118,20 @@ body {
     font-size: 22px;
   }
 }
+#start-button {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  padding: 15px 30px;
+  margin: 20px auto;
+  display: block;
+  background-color: #FEF2BF;
+  border: 2px solid #011F3F;
+  color: #011F3F;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#start-button:hover {
+  background-color: #FFDD57;
+}
