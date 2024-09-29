@@ -51,7 +51,4 @@ If you want to run it locally, follow these steps:
   <li>Open <code>index.html</code> in your browser to play.</li>
 </ol>
 
-## License
-<p style="background-color:#011F3F;color:#FEF2BF;padding:10px;border-radius:10px;">
-This project is open-source and available under the MIT License.
-</p>
+
