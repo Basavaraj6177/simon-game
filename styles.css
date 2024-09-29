@@ -2,39 +2,27 @@ body {
   text-align: center;
   background-color: #011F3F;
   max-height: fit-content;
-
-}
-.mainbody{
-  width: 100%;
-  height: 100%;
-}
-
-#level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 2rem;
-  margin:  5%;
-  color: #FEF2BF;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  display: block;
-  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 20px;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
   margin: auto;
-
 }
 
 .btn {
-  margin: 25px;
-  display: inline-block;
   height: 150px;
   width: 150px;
   border: 10px solid black;
   border-radius: 20%;
-}
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .red {
@@ -45,44 +33,88 @@ body {
   background-color: green;
 }
 
-.blue {
-  background-color: blue;
-}
-
 .yellow {
   background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
 }
 
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
-  
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin: 5%;
+  color: #FEF2BF;
+}
+
+.instructions-card {
+  background-color: #ffffff;
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d1d1d1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instructions-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
 }
 
 .instructions-heading {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 700;
   text-align: center;
-  color: #333;
-  margin-top: 20px;
+  color: #2c3e50;
+  margin-bottom: 20px;
 }
 
 .instructions {
   font-size: 18px;
-  line-height: 1.6;
-  color: #555;
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 10px;
-  max-width: 500px;
-  margin: 20px auto;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.instructions p {
+  line-height: 1.8;
+  color: #4a4a4a;
   margin: 0;
 }
 
-.instructions br {
-  margin-bottom: 10px;
+@media (max-width: 768px) {
+  .instructions-card {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .instructions {
+    font-size: 16px;
+  }
+
+  .instructions-heading {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .instructions-card {
+    padding: 15px;
+    max-width: 95%;
+  }
+
+  .instructions {
+    font-size: 14px;
+  }
+
+  .instructions-heading {
+    font-size: 22px;
+  }
 }
