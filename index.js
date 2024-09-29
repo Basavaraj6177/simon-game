@@ -39,7 +39,13 @@ function checkAnswer(currentLevel) {
     } else {
 
       console.log("wrong");
-
+      playSound("wrong")
+      document.querySelector("h1").innerHTML="Game over,Press Any Key to Restart";
+      $("body").addClass("game-over");
+      setTimeout(function(){
+          $("body").removeClass("game-over");
+      },200);
+      startOver();
     }
 
 }
@@ -72,5 +78,9 @@ function animatePress(currentColor){
 }
 
 
-
+function startOver(){
+  level=0;
+  gamePattern =[];
+  started=false;
+}
 
